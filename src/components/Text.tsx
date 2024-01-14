@@ -1,6 +1,10 @@
-import { ReactNode } from "react";
-
-export const Text = ({ as, children }: { as?: any; children: ReactNode }) => {
+export const Text = <C extends React.ElementType>({
+  as,
+  children,
+}: {
+  as?: C;
+  children: React.ReactNode;
+}) => {
   const Component = as || "span";
 
   return <Component>{children}</Component>;

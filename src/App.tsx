@@ -3,10 +3,9 @@ import { Text } from "./components";
 function App() {
   return (
     <>
-      <Text>App.tsx span</Text>
-      <Text as="div">App.tsx div</Text>
-      <Text as="h1">App.tsx h1</Text>
-      <Text as="p">App.tsx p</Text>
+      <Text as="h1">H1 Heading / Title</Text>
+
+      <Text as="h2">H2 Subheading / Subtitle</Text>
     </>
   );
 }
