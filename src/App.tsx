@@ -1,4 +1,4 @@
-import { Text } from "./components";
+import { Emphasis, Text } from "./components";
 
 function App() {
   return (
@@ -10,6 +10,10 @@ function App() {
       <Text as="a" href="https://react.dev/" target="_blank">
         Learn React
       </Text>
+
+      <br />
+
+      <Text as={Emphasis}>important message!</Text>
     </>
   );
 }
