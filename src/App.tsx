@@ -7,7 +7,7 @@ function App() {
 
       <Text as="h2">H2 Subheading / Subtitle</Text>
 
-      <Text as="a" href="https://react.dev/">
+      <Text as="a" href="https://react.dev/" target="_blank">
         Learn React
       </Text>
     </>
