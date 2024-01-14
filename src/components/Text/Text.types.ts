@@ -7,12 +7,6 @@ type Rainbow =
   | "orange"
   | "red";
 
-type TextProps<C extends React.ElementType> = {
-  as?: C;
+export type TextProps = {
   color?: Rainbow | "black";
 };
-
-export type Props<C extends React.ElementType> = React.PropsWithChildren<
-  TextProps<C>
-> &
-  Omit<React.ComponentPropsWithoutRef<C>, keyof TextProps<C>>;

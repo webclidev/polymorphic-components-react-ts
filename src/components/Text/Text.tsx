@@ -1,4 +1,5 @@
-import { Props } from "./Text.types";
+import { PolymorphicComponentProps } from "../../common.types";
+import { TextProps } from "./Text.types";
 
 export const Text = <C extends React.ElementType = "span">({
   as,
@@ -6,7 +7,7 @@ export const Text = <C extends React.ElementType = "span">({
   style,
   children,
   ...restProps
-}: Props<C>) => {
+}: PolymorphicComponentProps<C, TextProps>) => {
   const Component = as || "span";
   const internalStyles = { style: { ...style, color } };
 
